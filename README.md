@@ -1,5 +1,11 @@
 # PureColle
-ruby on railsを使ったプリキュアまとめサイトのクローラーです。
+Ruby on Railsを使ったプリキュアまとめサイトのクローラーです。
+
+## Requirements
+このサービスは以下の環境での動作確認を行いました。
+
+- Ruby 2.3.1p95
+- Ruby on Rails 5.1.5
 
 ## Author
 Duuun
