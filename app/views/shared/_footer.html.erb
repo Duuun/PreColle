@@ -1,0 +1,15 @@
+<footer>
+  <div class="scroll-up">
+      <a href="#card-1"><i class="fas fa-arrow-circle-up fa-4x sc-pink"></i></a>
+  </div>
+    <%
+      nodes = @doc.xpath("//div[@class='top-article-title']")
+      # @doc.xpath("//div[@class='top-article-title'] a").each do |node|
+      nodes.each do |node|
+      # @doc.css(".top-article-title a").each do |link| 
+        # concat simple_format(h(link["href"]))
+        title = node.css('a').inner_text
+        titles.push(title)
+      end
+    %>
+</footer>

@@ -1,0 +1,52 @@
+<header>
+  <nav>
+    <div class="nav-wrapper white" id="header">
+      <div class="nav-left">
+          <div id="nav-drawer">
+              <input id="nav-input" type="checkbox" class="nav-unshown">
+              <label id="nav-open" for="nav-input"><i class="material-icons material-icons-menu">menu</i></label>
+              <label class="van-unshown" id="nav-close" for="nav-input"></label>
+              <div id="nav-content">
+                  <ul>
+                      <div class="nav-section height56_">
+                          <input id="nav-input" type="checkbox" class="nav-unshown">
+                          <label id="nav-open" class="nav-open-padding0" for="nav-input">
+                              <i class="material-icons nav-icon nav-b material-icons-menu header-nav-section-logo">menu
+                                  <div class="nav-discription">
+                                    <%= image_tag 'logo.png', :alt=>'プレコレ！', :class=>'logo-precolle' %>
+                                  </div>
+                              </i>
+                          </label>
+                      </div>
+                      <div class="nav-section height172_">
+                          <li><a href="#"><i class="material-icons nav-icon nav-b">home<div class="nav-discription">ホーム</div></i></a></li>
+                          <li><a href="#"><i class="material-icons nav-icon nav-b">whatshot<div class="nav-discription">人気記事</div></i></a></li>
+                          <li><a href="about.html"><i class="material-icons nav-icon nav-b">info_outline<div class="nav-discription">このサイトについて</div></i></a></li>
+                          <li><a href="contact.html"><i class="material-icons nav-icon nav-b">email<div class="nav-discription">お問い合わせ</div></i></a></li>
+                      </div>
+                      <div class="nav-menu-copy">
+                          <li><div class="copy-right">掲載されている記事や画像等の著作権は、<br>各権利所有者に帰属致します。</div></li>
+                          <li><div class="copy">Copyright &copy; 2018-2018 PureColle</div></li>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+          <div class="logo"><a href="#" class="brand-logo"><%= image_tag 'title_logo', :alt => 'プリコレ！', :class => "title_img" %></a></div>
+      </div>
+      <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+      <div class="material-header-middle">
+          <form>
+              <div class="input-field nav-input-search" style="padding-top:4px;">
+                  <input id="search" type="search" placeholder="検索" required>
+                  <label class="label-icon i-search" for="search"><i class="material-icons">search</i></label>
+              </div>
+          </form>
+      </div>
+      <div class="material-header-right">
+          <i class="material-icons red-text text-accent-3">whatshot</i>
+          <i class="material-icons">apps</i>
+          <i class="material-icons">list</i>
+      </div>
+    </div>
+  </nav>
+</header>
