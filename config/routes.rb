@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get 'purecolle/index'
   get 'purecolle', to: 'purecolle#index'
 
-  get 'purecolle/contact/index', to: 'purecolle#contact'
-  get 'purecolle/contact/index', to: 'purecolle#contact#index'
+  get 'purecolle/contact', to: 'purecolle#contact'
+
 end
