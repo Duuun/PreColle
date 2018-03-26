@@ -2,9 +2,9 @@
 $(function() {
   var topBtn = $('.scroll-up');
   topBtn.hide();
-  //スクロールが100に達したらボタン表示
+  //Display the button when scroll reaches under score
   $(window).scroll(function() {
-    if($(this).scrollTop() > 150 ) {
+    if($(this).scrollTop() > 250 ) {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
