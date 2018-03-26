@@ -101,9 +101,9 @@ body {
     margin: 0 50px;
 }
 .scroll-up {
-    float: right;
-    margin-right: 70px;
-    margin-bottom: 70px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
 }
 .fadeInUp {
  -webkit-animation-fill-mode:both;
@@ -372,5 +372,9 @@ input::-moz-placeholder {
 }
 input:-ms-input-placeholder {
   color: red;
+}
 
+/* footer */
+.fa-arrow-circle-up:hover {
+    color: #f5ccda;
 }

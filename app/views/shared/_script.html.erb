@@ -1,28 +1,22 @@
 <script>
 $(function() {
-    $('.scroll-up').css('visibility','hidden');
-    $(window).scroll(function() {
-        var windowHeight = $(window).height(),
-        topWindow = $(window).scrollTop();
-        $('.scroll-up').each(function(){
-            var targetPosition = $(this).offset().top;
-            if(topWindow > targetPosition - windowHeight - 200){
-                $(this).addClass("fadeInUp");
-            }
-        });
-    });
-});
+  var topBtn = $('.scroll-up');
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 150 ) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
 
-
-//smooth scroll
-$(function() {
-    $('a[href^="#"]').click(function() {
-        var speed = 400;
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
-    });
+  //smooth scroll top
+  topBtn.click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+  })
 });
 </script>
