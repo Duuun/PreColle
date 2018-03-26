@@ -9,7 +9,10 @@ class PurecolleController < ApplicationController
     @doc = Nokogiri::HTML(open(uri), nil, "utf-8")
   end
 
-  def contact
-  end
-  
+  # def contact
+  # end
+
+  # def about
+  # end
+
 end

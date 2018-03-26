@@ -19,10 +19,22 @@
                           </label>
                       </div>
                       <div class="nav-section height172_">
-                          <li><a href="#"><i class="material-icons nav-icon nav-b">home<div class="nav-discription">ホーム</div></i></a></li>
-                          <li><a href="#"><i class="material-icons nav-icon nav-b">whatshot<div class="nav-discription">人気記事</div></i></a></li>
-                          <li><a href="about.html"><i class="material-icons nav-icon nav-b">info_outline<div class="nav-discription">このサイトについて</div></i></a></li>
-                          <li><a href="contact.html"><i class="material-icons nav-icon nav-b">email<div class="nav-discription">お問い合わせ</div></i></a></li>
+                        <li>
+                            <%= link_to purecolle_path do %>
+                                <i class="material-icons nav-icon nav-b">home<div class="nav-discription">ホーム</div></i>
+                            <% end %>
+                        </li>
+                        <li><a href="#"><i class="material-icons nav-icon nav-b">whatshot<div class="nav-discription">人気記事</div></i></a></li>
+                        <li>
+                            <%= link_to purecolle_about_path do %>
+                                <i class="material-icons nav-icon nav-b">info_outline<div class="nav-discription">このサイトについて</div></i>
+                            <% end %>
+                        </li>
+                        <li>
+                            <%= link_to purecolle_contact_path do %>
+                                <i class="material-icons nav-icon nav-b">email<div class="nav-discription">お問い合わせ</div></i>
+                            <% end %>
+                        </li>
                       </div>
                       <div class="nav-menu-copy">
                           <li><div class="copy-right">掲載されている記事や画像等の著作権は、<br>各権利所有者に帰属致します。</div></li>
