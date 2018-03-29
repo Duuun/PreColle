@@ -1,5 +1,31 @@
 @charset "utf-8";
 
+
+.img-top-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    margin: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 28px 0 0;
+    /* border-color: #9b1156 transparent transparent transparent; */
+    border-color: skyblue transparent transparent transparent;
+    line-height: 1;
+
+
+    /* position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: skyblue;
+    font-size: 15px;
+    line-height: 1;
+    padding: 5px 10px; */
+}
+
 body {
     color: rgba(0,0,0,0.87);
 }
