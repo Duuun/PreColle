@@ -374,6 +374,9 @@ nav .input-field label i {
 .card-margin {
     margin: 40px 16px 0 10px !important;
 }
+.card.medium {
+    height: 370px !important;
+}
 
 
 /* placeholeder */
