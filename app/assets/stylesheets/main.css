@@ -359,6 +359,15 @@ nav .input-field label i {
   margin-right: 30px;
   cursor: pointer;
 }
+.card-action a {
+    font-size: 13px;
+    color: rgba(76, 87, 102, 0.5) !important;
+}
+.card-action a:hover {
+    color: #f06292 !important;
+    border-bottom: 1px solid #f06292;
+}
+
 
 /* placeholeder */
 input::-webkit-input-placeholder {
