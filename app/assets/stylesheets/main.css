@@ -401,13 +401,19 @@ nav .input-field label i {
     font-size: 15.5px;
     color: black !important;
 }
+.card-action {
+    transition: 0s !important;
+}
 .card-margin {
     margin: 40px 16px 0 10px !important;
 }
 .card.medium {
     height: 370px !important;
 }
-
+.search-icon {
+    margin-top: 10px;
+    color: #212121 !important;
+}
 
 /* placeholeder */
 input::-webkit-input-placeholder {
