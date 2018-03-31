@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get 'purecolle/contact', to: 'purecolle#contact'
   get 'purecolle/about', to: 'purecolle#about'
 
+  root :to => 'purecolle#index'
+
 end
