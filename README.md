@@ -1,4 +1,4 @@
-# PureColle
+# PreColle
 Ruby on Railsを使ったプリキュアまとめサイトのクローラーです。
 
 ## Requirements
