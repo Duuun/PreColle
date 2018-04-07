@@ -1,7 +1,15 @@
+<style type="text/css">
+.test {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+
 <%= render 'shared/nav' %>
 
 <main>
-    <div class="row" style="width: 95%;">
+    <div class="row" style="width: 80%; float: left;">
         <div class="card medium hoverable col s4 card-margin">
             <a href="http://anichil.com/archives/1070252769.html" target="_blank" class="test">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -171,8 +179,18 @@
             </a>
         </div>
     </div>
+    <div class="row test" style="width:20%; float:left; margin-top:80px; margin-left:-50px;">
+        <a 
+            class="twitter-timeline" 
+            href="https://twitter.com/search?q=%23precure%20OR%20%E3%83%97%E3%83%AA%E3%82%AD%E3%83%A5%E3%82%A2%20OR%20%E3%83%8F%E3%82%B0%E3%83%97%E3%83%AA" 
+            data-widget-id="982648103302909954"
+            data-chrome="nofooter" 
+            width="380px"
+            height="500px">#precure OR プリキュア OR ハグプリに関するツイート
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
 </main>
 
 <%= render 'shared/scroll' %>
-<%= render 'shared/footer' %>
 <%= render 'shared/script' %>
