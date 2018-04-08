@@ -19,15 +19,19 @@
         width: 100%;
     }
 }
+/* mobile */
 @media (max-width: 768px) {
     .col-sm-6 {
-        width: 50% !important;
+        width: 45% !important;
     }
     .col-sm-12 {
-        width: 90%;
+        width: 100%;
+    }
+    .card {
+        max-width: 323px;
+        min-height: 323px !important;
     }
 }
-
 .card {
     max-width: 530px;
     min-width: 140px;
@@ -190,31 +194,8 @@ body {
 .material-header-right .material-icons {
     color: #f48fb1;
 }
-/* @media screen and (max-width: 1100px) {
-    .input-field {
-        opacity: 0;
-    }
-} */
-/* @media screen and (min-width: 1140px) {
-    .row .s5 {
-        width: 25% !important;
-        margin-left: auto !important;
-        left: auto !important;
-        right: auto !important;
-    }
-} */
 .card-content p a {
     font-size: 13px;
-}
-.row {
-    margin: 40px;
-}
-/* .card:hover {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-} */
-/* overwriting */
-.row .col {
-    padding: 0 !important;
 }
 .material-icons-menu, .nav-icon {
     color: rgba(17, 17, 17, 0.4);
@@ -236,6 +217,13 @@ body {
 }
 .height172_ {
     height: 172px;
+}
+.row {
+    margin-bottom: 0 !important;
+    margin-top: -32px;
+}
+.row .col {
+    padding: 0 !important;
 }
 .nav-section a:hover {
     background-color: rgb(238, 238, 238);
@@ -431,7 +419,7 @@ nav .input-field label i {
     transition: 0s !important;
 }
 .card-margin {
-    margin: 40px 0 0 0 !important;
+    margin: 0 5px 0 10px !important;
 }
 .card.medium {
     height: 370px !important;
