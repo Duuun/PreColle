@@ -31,7 +31,12 @@
         max-width: 323px;
         min-height: 323px !important;
     }
+    .scroll-up {
+        display: none !important;
+    }
 }
+
+
 .card {
     max-width: 530px;
     min-width: 140px;
