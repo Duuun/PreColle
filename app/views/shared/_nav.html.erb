@@ -1,25 +1,111 @@
-<!-- header -->
-<header>
-  <nav>
-    <div class="nav-wrapper white" id="header">
-      <div class="nav-left">
-          <div id="nav-drawer">
-              <input id="nav-input" type="checkbox" class="nav-unshown">
-              <label id="nav-open" for="nav-input"><i class="material-icons material-icons-menu">menu</i></label>
-              <label class="van-unshown" id="nav-close" for="nav-input"></label>
-              <div id="nav-content">
-                  <ul>
-                      <div class="nav-section height56_">
-                          <input id="nav-input" type="checkbox" class="nav-unshown">
-                          <label id="nav-open" class="nav-open-padding0" for="nav-input">
-                              <i class="material-icons nav-icon nav-b material-icons-menu header-nav-section-logo">menu
-                                  <div class="nav-discription">
+<style type="text/css">
+@media (max-width: 1160px) {
+    .header {
+        width: 100%;
+    }
+    .primary-nav-inner {
+        width: 100%
+    }
+}
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header {
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 15px 10px;
+    height: 64px;
+    border: none;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.primary-nav-inner {
+    border-bottom: #f3f3f3;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.header-logo {
+    display: inline-block;
+    z-index: 1;
+    float: left;
+    height: 34px;
+    left: 0;
+    margin: 0;
+}
+.pull-left {
+    float: left !important;
+}
+.header-logo-img {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin: 5px 16px 0;
+}
+.header-wrapper .header-logo img {
+    display: block;
+    margin: 0;
+    max-height: 35px;
+    padding: 0;
+}
+.header-wrapper .header-logo {
+    display: inline-block;
+    float: left;
+    height: 35px;
+    margin: -5px 15px 0;
+}
+.header-wrapper .pull-left i {
+    color: #333;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+[type="checkbox"] + label {
+    padding-left: 0;
+}
+</style>
+
+<div class="header-wrapper white">
+<nav class="header primary-nav">
+    <div class="primary-nav-inner">
+    <!-- <div class="nav-wrapper white" id="header"> -->
+        <div class="header-logo">
+            <div id="nav-drawer" class="pull-left">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><i class="material-icons material-icons-menu">menu</i></label>
+                <label class="van-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul>
+                        <div class="nav-section height56_">
+                            <input id="nav-input" type="checkbox" class="nav-unshown">
+                            <label id="nav-open" class="nav-open-padding0" for="nav-input">
+                                <i class="material-icons nav-icon nav-b material-icons-menu header-nav-section-logo">menu
+                                    <div class="nav-discription">
                                     <%= image_tag 'logo.png', :alt=>'プレコレ！', :class=>'logo-precolle' %>
-                                  </div>
-                              </i>
-                          </label>
-                      </div>
-                      <div class="nav-section height172_">
+                                    </div>
+                                </i>
+                            </label>
+                        </div>
+                        <div class="nav-section height172_">
                         <li>
                             <%= link_to purecolle_path do %>
                                 <i class="material-icons nav-icon nav-b">home<div class="nav-discription">ホーム</div></i>
@@ -36,30 +122,15 @@
                                 <i class="material-icons nav-icon nav-b">email<div class="nav-discription">お問い合わせ</div></i>
                             <% end %>
                         </li>
-                      </div>
-                      <div class="nav-menu-copy">
-                          <li><div class="copy">&copy; 2018 precolle</div></li>
-                      </div>
-                  </ul>
-              </div>
-          </div>
-          <div class="logo"><a href="#" class="brand-logo"><%= image_tag 'title_logo.png', :alt => 'プリコレ！', :class => "title_img" %></a></div>
-      </div>
-      <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
-      <div class="material-header-middle">
-          <form>
-              <div class="input-field nav-input-search">
-                  <input id="search" type="search" placeholder="検索">
-                  <label class="label-icon i-search" for="search"><i class="material-icons search-icon">search</i></label>
-              </div>
-          </form>
-      </div>
-      <div class="material-header-right">
-          <i class="material-icons red-text text-accent-3">whatshot</i>
-          <i class="material-icons">apps</i>
-          <i class="material-icons">list</i>
-      </div>
+                        </div>
+                        <div class="nav-menu-copy">
+                            <li><div class="copy">&copy; 2018 precolle</div></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-logo-img"><a href="#"><%= image_tag 'title_logo.png', :alt => 'プリコレ！', :class => "title_img" %></a></div>
+        </div>
     </div>
-  </nav>
-</header>
-<!-- header -->
+</nav>
+</div>

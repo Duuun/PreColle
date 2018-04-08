@@ -1,5 +1,110 @@
 @charset "utf-8";
 
+/* @media query */
+@media (max-width: 1160px) {
+    .hidden_tl {
+        display: none;
+    }
+}
+@media (min-width: 1160px) {
+    .col-sm-8 {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1160px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+/* mobile */
+@media (max-width: 768px) {
+    .col-sm-6 {
+        width: 45% !important;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    .col-sm-9 {
+        width: 100% !important;
+    }
+    .card {
+        max-width: 323px;
+        min-height: 323px !important;
+    }
+    .hidden_scroll {
+        display: none !important;
+    }
+}
+
+body {font-family: 'ãƒ¡ã‚¤ãƒªã‚ª', 'Meiryo', 'Hiragino Kaku Gothic Pro', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3', 'Osaka', 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯', sans-serif;letter-spacing: .15rem;}
+nav ul a,nav .brand-logo {color: #444;}
+p {line-height: 2rem;font-size: 1.1rem;}
+.button-collapse {color: #26a69a;}
+.mes {height: auto;min-height: 380px;}
+.mes .section {top: 20%;}
+.info {height: auto;min-height: 500px;} 
+.parallax-container .section {width: 100%;}
+.clearfix {zoom: 1; }
+.clear {clear: both;}
+.info h1 { font-size: 3rem;line-height: 2.8rem;padding: 12% 0;}
+.info h2 { font-size: 1rem;line-height: 1.5rem;}
+.deco {border-bottom: 2px #26a69a dotted;padding: 4%;}
+h6 { font-size: 1.3rem;padding: 5%;line-height: 2rem;}
+.padding {padding: 5%;}
+.m-padding {padding: 5% 0;}
+.s-padding {padding: 1%;}
+nav ul#nav-mobile li:first-child a {overflow: auto;}
+.infoIcon {float:left; height: 175px; width: 175px; line-height: 175px; max-width: 100%; background: #eceff1; border-radius: 50%; -o-border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; display: block; color: #fff; text-align: center; vertical-align: middle; position: relative; margin: 0 10px 50px;}
+.up-btn { width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.5); display: block; margin: 0 auto; color: #fff; font-size: 18px; line-height: 46px; text-align: center; top: -26px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
+.up-btn:hover, up-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
+.icon-block {padding: 0 15px;}
+footer.page-footer {margin: 0;}
+@media only screen and (max-width : 992px) {
+.parallax-container .section {position: absolute;top: 30%;}
+.mes {min-height: 150px;}
+.mes .section {position: absolute;top: 25%;}
+.info h1 { padding: 5%;}
+#index-banner .section {top: 10%;}
+.parallax-container h1 {font-size: 2.2rem;}
+.top img { -ms-interpolation-mode: bicubic; height: 500px; width /***/:auto; /*IE8*/}
+}
+
+.card {
+    max-width: 323px;
+    min-height: 390px;
+    width: 100%;
+}
+
+/* twitter_timeline */
+.shadow_tl {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.sizing_tl {
+    position: fixed;
+    margin-top: 8px !important; 
+    /* margin-left: -50px !important; */
+}
+/* main */
+.img-top-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    margin: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 28px 0 0;
+    border-color: #ff6464 transparent transparent transparent;
+    line-height: 1;
+}
+
+body {
+    color: rgba(0,0,0,0.87);
+}
 .container {
     width: 90%;
 }
@@ -38,31 +143,23 @@
     margin: 15px 100px 10px 0 !important;
     height: 30px;
 }
-.logo {
-    margin-top: -76px;
-    margin-left: 500px;
-}
-.title_img {
-    height: 40px;
-    margin: 13px 0 0 -434px;
-}
 .nav-style {
     border: none;
     background-color: lightblue;
-    background-image : url(img/search.png);
-    background-repeat  : no-repeat;
-    background-position: 8px center;
-    background-size    : auto 60%;
-    background-color   : #fff;
-    margin             : 0 auto;
-    padding-left       : 30px;
-    border             : 2px solid #666;
-    border-radius      : 6px;
-    color              : #555;
-    font-size          : 18px;
-    letter-spacing     : 0.1em;
-    font-weight        : bold;
-    outline            : 0;
+    background-image : url(img/search.png);  /* 背景画像：虫眼鏡(*1)*/
+    background-repeat  : no-repeat;        /* 背景は繰り返さない  */
+    background-position: 8px center;       /* 背景の位置          */
+    background-size    : auto 60%;         /* 背景のサイズ        */
+    background-color   : #fff;             /* 背景色              */
+    margin             : 0 auto;           /* サンプルは中央寄せ  */
+    padding-left       : 30px;             /* 虫眼鏡分の左余白    */
+    border             : 2px solid #666;   /* 枠線　幅,実践,色    */
+    border-radius      : 6px;              /* 角丸                */
+    color              : #555;             /* 文字色              */
+    font-size          : 18px;             /* フォントサイズ      */
+    letter-spacing     : 0.1em;            /* 文字間隔            */
+    font-weight        : bold;             /* 太字                */
+    outline            : 0;                /* 入力薄枠を非表示    */
 }
 .nav-style:focus {
     background-color: #cfe7ff;
@@ -78,8 +175,8 @@ header {
     width: 100%;
 }
 body {
-    /*background-color: #fff9ff;*/
-    background-color: #f5f5f5;
+    background-color: #fff9ff;
+    /* background-image: url("img/back-pink.png"); */
     margin-top: 100px;
 }
 .nav-left {
@@ -87,9 +184,16 @@ body {
     display: block;
     z-index: 20px;
 }
-.card {
-    max-width: 323px;
-    min-height: 390px;
+.copy {
+    font-size: 10px;
+    float: left;
+    margin-left: 12px;
+    margin-top: -8px;
+}
+.scroll-up {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
 }
 .fadeInUp {
  -webkit-animation-fill-mode:both;
@@ -140,6 +244,13 @@ body {
 .height172_ {
     height: 172px;
 }
+.row {
+    margin-bottom: 0 !important;
+    margin-top: -32px;
+}
+.row .col {
+    padding: 0 !important;
+}
 .nav-section a:hover {
     background-color: rgb(238, 238, 238);
 }
@@ -175,7 +286,6 @@ body {
 #nav-drawer {
   position: relative;
 }
-/*チェックボックス等は非表示に*/
 .nav-unshown {
   display: none;
 }
@@ -196,12 +306,11 @@ body {
 #nav-open span:after {
   bottom: -16px;
 }
-/*閉じる用の薄黒カバー*/
 #nav-close {
-display: none;/*はじめは隠しておく*/
+display: none;
 position: fixed;
 z-index: 99;
-top: 0;/*全体に広がるように*/
+top: 0;
 left: 0;
 width: 100%;
 height: 100%;
@@ -209,21 +318,19 @@ background: black;
 opacity: 0;
 transition: .3s ease-in-out;
 }
-
-/*中身*/
 #nav-content {
 overflow: auto;
 position: fixed;
 top: 0;
 left: 0;
 z-index: 9999;
-width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+width: 90%;
 max-width: 245px;
 height: 100%;
-background: #fff;/*背景色*/
-transition: .3s ease-in-out;/*滑らかに表示*/
+background: #fff;
+transition: .3s ease-in-out;
 -webkit-transform: translateX(-105%);
-transform: translateX(-105%);/*左に隠しておく*/
+transform: translateX(-105%);
 }
 #nav-content li {
   color: #212121;
@@ -236,18 +343,14 @@ transform: translateX(-105%);/*左に隠しておく*/
   height: 40px;
   align-content: center;
 }
-#nav-open {
-  padding-left: 20px;
-}
-/*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
-display: block;/*カバーを表示*/
+display: block;
 opacity: .5;
 }
 
 #nav-input:checked ~ #nav-content {
 -webkit-transform: translateX(0%);
-transform: translateX(0%);/*中身を表示（右へスライド）*/
+transform: translateX(0%);
 box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 .nav-icon {
@@ -322,6 +425,32 @@ nav .input-field label i {
   margin-right: 30px;
   cursor: pointer;
 }
+.card-action a {
+    margin: 0 !important;
+    font-size: 13px;
+    color: rgba(76, 87, 102, 0.5) !important;
+}
+.card-action a:hover {
+    color: #f06292 !important;
+    border-bottom: 1px solid #f06292;
+}
+.card-content p {
+    font-size: 15.5px;
+    color: black !important;
+}
+.card-action {
+    transition: 0s !important;
+}
+.card-margin {
+    margin: 0 5px 0 10px !important;
+}
+.card.medium {
+    height: 370px !important;
+}
+.search-icon {
+    margin-top: 10px;
+    color: #212121 !important;
+}
 
 /* placeholeder */
 input::-webkit-input-placeholder {
@@ -335,4 +464,16 @@ input::-moz-placeholder {
 }
 input:-ms-input-placeholder {
   color: red;
+}
+
+/* footer */
+.fa-arrow-circle-up:hover {
+    color: #f5ccda;
+}
+.footer-padding {
+    padding-left: 16px;
+    padding-bottom: 7px;
+}
+.page-footer {
+    padding-top: 5px !important;
 }
