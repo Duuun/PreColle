@@ -212,6 +212,18 @@
                 </div>
             </div>
         </div>
+
+        <h3>Crawling</h3>
+            <div style="width:400px; height:400px;">
+                <% @images.each do |img| %>
+                    <%= image_tag img %>
+                    <% @nodes.each do |node| %>
+                        <%= link_to do %>
+                            <%= p node.text %>
+                        <% end %>     
+                    <% end %>                    
+                <% end %>
+            </div>
         <div class="col-sm-3">
             <%= render 'shared/timeline'%>
         </div>
