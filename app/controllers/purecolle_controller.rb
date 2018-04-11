@@ -16,8 +16,9 @@ class PurecolleController < ApplicationController
     doc = Nokogiri::HTML.parse(html, nil, charset)
     # @hoge = doc.css('img').map { |img| img.attr('src') }
     #@nodes = doc.xpath('//*[(@class="ArticleFirstImageThumbnail")]//img')
-    @nodes = doc.css('.top-article-title a')
-    @images = doc.css('.ArticleFirstImageThumbnail a img').map {|img| img.attr('src')}
+    nodes = doc.xpath('//div[@class="top-article-outer"]')
+    @title = nodes.css('.top-article-title a')
+    @img = nodes.css('.top-left .ArticleFirstImageThumbnail a img').map {|img| img.attr('src')}
 
     # @doc = Nokogiri::HTML(open(uri), nil, "utf-8")
     # @doc = Nokogiri::HTML(open(uri), nil, "utf-8")
