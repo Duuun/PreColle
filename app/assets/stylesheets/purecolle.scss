@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* over all */
 @media only screen and (max-width: 601px){
     .row .col.m6 {
         width: 50% !important;
@@ -17,19 +18,24 @@ body {
     background-color: #fdf4f7;
 }
 
+/* nav */
 nav ul li a {
+    font-family : 'ヒラギノ角ゴシック Pro', sans-serif;
     color: lightpink;
+    font-weight: 700;
 }
 nav ul li a:hover {
     color: white;
+    background-color: lightpink;
 }
+
 /* body */
 .card-content p {
     color: #3e2723;
     line-height: 35px;
 }
 .card .card-action {
-    padding: 16px 5px !important;
+    padding: 16px 0 !important;
 }
 .card .card-action a {
     color: #bcaaa4 !important;
