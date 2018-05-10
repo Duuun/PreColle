@@ -81,10 +81,21 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>        
+        <li>
+            <%= link_to purecolle_path do %>
+                Home
+            <% end %>
+        </li>
+        <li>
+            <%= link_to purecolle_about_path do %>
+                About
+            <% end %>
+        </li>
+        <li>
+            <%= link_to purecolle_contact_path do %>
+                Contact
+            <% end %>
+        </li>   
     </ul>
 </div>
